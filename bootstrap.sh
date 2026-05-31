@@ -10,4 +10,15 @@ git clone https://${TOKEN}@github.com/jiumeng77/vegas-terminal.git /opt/tv-disco
 
 cd /opt/tv-discord-bot || exit
 
-bash scripts/install.sh
+echo
+echo "1) VPS / Systemd"
+echo "2) Docker"
+echo
+
+read -p "Choose Install Mode [1-2]: " MODE
+
+if [ "$MODE" = "2" ]; then
+    bash scripts/docker-install.sh
+else
+    bash scripts/install.sh
+fi
