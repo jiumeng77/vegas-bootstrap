@@ -6,7 +6,7 @@ rm -rf /opt/tv-discord-bot
 
 read -p "GitHub Token: " TOKEN
 
-git clone https://${TOKEN}@github.com/jiumeng77/vegas-terminal.git /opt/tv-discord-bot
+git clone https://${TOKEN}@github.com/jiumeng77/tv-discord-bot.git
 
 cd /opt/tv-discord-bot || exit
 
